@@ -10,6 +10,9 @@ ul {
 li {
     list-style-type: none;
 }
+.icon {
+    font-size: 32px;
+}
 
 .l-header {
     width: 100%;
@@ -18,8 +21,8 @@ li {
     .l-header__inner-pc {
         width: 100%;
         background-color: aqua;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
+        // padding-top: 0.3rem;
+        // padding-bottom: 0.3rem;
         padding-left: 1.5rem;
         // padding-right: 1.5rem;
         display: inline-flex;
@@ -29,9 +32,14 @@ li {
         .title {
             font-size:25px;
             color: coral;
+            margin-right: 1rem;
+            white-space: nowrap;
 
-            @media (max-width: 830px) {
+            @media (max-width: 870px) {
                 font-size: 16px;
+            }
+            @media (max-width: 777px) {
+                font-size: 14px;
             }
         }
         .navarea {
@@ -44,8 +52,8 @@ li {
             }
 
             ul {
-                margin-left:auto;
-                margin-right: 2rem;
+                margin-left: auto;
+                margin-right: 20px;
                 display: inline-flex;
                 gap: 20px;
             }
@@ -60,11 +68,42 @@ li {
                         font-size: 14px;
                     }
                 }
+                li {
+                    @media (max-width: 760px) {
+                        font-size: 12px;
+                    }
+                }
             }
-            .nav-contact {
-            display: inline-flex;
+            .nav-cta01 {
+                display: inline-flex;
+
+                a {
+                    text-align: center;
+                    text-decoration-line: none;
+                    color: #fff;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 1rem;
+                    letter-spacing: 0.2rem;
+                    font-size: 16px;
+
+                    @media (max-width: 738px) {
+                        font-size: 14px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+                .document {
+                    background-color: chocolate;
+                }
+                .contact {
+                    background-color: cadetblue;
+                }
+            
+
+            
+            
             }
         }
-        
     }
 }

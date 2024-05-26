@@ -12,6 +12,10 @@ li {
   list-style-type: none;
 }
 
+.icon {
+  font-size: 32px;
+}
+
 .l-header {
   width: 100%;
   background-color: beige;
@@ -19,8 +23,6 @@ li {
 .l-header .l-header__inner-pc {
   width: 100%;
   background-color: aqua;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
   padding-left: 1.5rem;
   display: inline-flex;
   align-items: center;
@@ -29,10 +31,17 @@ li {
 .l-header .l-header__inner-pc .title {
   font-size: 25px;
   color: coral;
+  margin-right: 1rem;
+  white-space: nowrap;
 }
-@media (max-width: 830px) {
+@media (max-width: 870px) {
   .l-header .l-header__inner-pc .title {
     font-size: 16px;
+  }
+}
+@media (max-width: 777px) {
+  .l-header .l-header__inner-pc .title {
+    font-size: 14px;
   }
 }
 .l-header .l-header__inner-pc .navarea {
@@ -45,7 +54,7 @@ li {
 }
 .l-header .l-header__inner-pc .navarea ul {
   margin-left: auto;
-  margin-right: 2rem;
+  margin-right: 20px;
   display: inline-flex;
   gap: 20px;
 }
@@ -59,6 +68,34 @@ li {
     font-size: 14px;
   }
 }
-.l-header .l-header__inner-pc .navarea .nav-contact {
+@media (max-width: 760px) {
+  .l-header .l-header__inner-pc .navarea .nav-menu li {
+    font-size: 12px;
+  }
+}
+.l-header .l-header__inner-pc .navarea .nav-cta01 {
   display: inline-flex;
+}
+.l-header .l-header__inner-pc .navarea .nav-cta01 a {
+  text-align: center;
+  text-decoration-line: none;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 1rem;
+  letter-spacing: 0.2rem;
+  font-size: 16px;
+}
+@media (max-width: 738px) {
+  .l-header .l-header__inner-pc .navarea .nav-cta01 a {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.l-header .l-header__inner-pc .navarea .nav-cta01 .document {
+  background-color: chocolate;
+}
+.l-header .l-header__inner-pc .navarea .nav-cta01 .contact {
+  background-color: cadetblue;
 }/*# sourceMappingURL=style.css.map */
