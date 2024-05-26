@@ -1,3 +1,4 @@
+// style.scss
 * {
     margin: 0;
     overflow: hidden;
@@ -13,7 +14,32 @@
         padding-top: 0.3rem;
         padding-bottom: 0.3rem;
         padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        // padding-right: 1.5rem;
         display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .title {
+            font-size:25px;
+            color: coral;
+
+            @media (max-width: 284px) {
+                font-size: 16px;
+            }
+        }
+        .navarea {
+            background-color: bisque;
+            display: inline-flex;
+            align-items: center;   
+            
+            .nav-menu ul {
+                display: flex;
+                flex-direction: row;
+            }
+            .nav-contact {
+            display: inline-flex;
+            }
+        }
+        
     }
 }

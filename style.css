@@ -14,6 +14,28 @@
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.l-header .l-header__inner-pc .title {
+  font-size: 25px;
+  color: coral;
+}
+@media (max-width: 284px) {
+  .l-header .l-header__inner-pc .title {
+    font-size: 16px;
+  }
+}
+.l-header .l-header__inner-pc .navarea {
+  background-color: bisque;
+  display: inline-flex;
+  align-items: center;
+}
+.l-header .l-header__inner-pc .navarea .nav-menu ul {
+  display: flex;
+  flex-direction: row;
+}
+.l-header .l-header__inner-pc .navarea .nav-contact {
   display: inline-flex;
 }/*# sourceMappingURL=style.css.map */
