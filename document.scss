@@ -10,6 +10,7 @@ $color-primary:#ff8000;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
     .nav-area {
         display: flex;
         flex-direction: column;
@@ -40,6 +41,7 @@ $color-primary:#ff8000;
         gap: 10px;
         a {
             font-weight: 500;
+            text-shadow: 0.2px 0.2px 0 #000;
         }
     }
 }

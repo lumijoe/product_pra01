@@ -35,3 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// スクロールしたにするとheaderの透明度が高くなる
+document.addEventListener('scroll', function() {
+    const header = document.querySelector('.l-header__inner-pc');
+    if (window.scrollY > 40) {
+        header.style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+    } else {
+        header.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+    }
+});

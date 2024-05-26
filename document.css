@@ -10,6 +10,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
 }
 .l-header__inner-pc .nav-area {
   display: flex;
@@ -40,4 +41,5 @@
 }
 .l-header__inner-pc .menu-pc a {
   font-weight: 500;
+  text-shadow: 0.2px 0.2px 0 #000;
 }/*# sourceMappingURL=document.css.map */

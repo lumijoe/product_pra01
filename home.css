@@ -9,6 +9,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
 }
 .l-header .l-header__inner-pc .title {
   font-size: 25px;
