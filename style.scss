@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.l-header {
+    width: 100%;
+    background-color: beige;
+
+    .l-header__inner-pc {
+        width: 100%;
+        background-color: aqua;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
