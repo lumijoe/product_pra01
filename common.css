@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.icon {
+  font-size: 32px;
+}/*# sourceMappingURL=common.css.map */

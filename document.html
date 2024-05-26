@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document</title>
-    <style>
-        .bidi-example {
-            direction: rtl; /* 右から左へのテキスト方向 */
-        }
-
-        .isolated {
-            unicode-bidi: isolate; /* この要素のテキストを独立させる */
-            direction: ltr; /* 左から右へのテキスト方向 */
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="./document.css">
+    
 </head>
 <body>
-    <h1>Document page</h1>
-    <p style="direction: rtl;">
-        これは右から左へのテキストですので、折り返したりするかもですがテストです。
-       <br> <span style="unicode-bidi: isolate; direction: ltr;">This is left-to-right text.</span>
-        また、右から左へのテキストです
-    </p>
+    <header class="l-header">
+        <div class="l-header__inner">
+            <h1 class="title">
+                SmartGC
+            </h1>
+            <div class="navarea">
+                <nav class="cta-tel">
+                    <p>TEL<span class="telnum"></span></p>
+                    <p class="telinfo"></p>
+                </nav>
+                <nav class="menu-pc">
+                    <ul>
+                        <li>選ばれる理由</li>
+                        <li>サービス紹介</li>
+                        <li>導入までの流れ</li>
+                        <li>料金プラン</li>
+                        <li>よくあるご質問</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="./script.js"></script>
 </body>
 </html>
