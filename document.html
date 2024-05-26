@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>document</title>
+    <style>
+        .bidi-example {
+            direction: rtl; /* 右から左へのテキスト方向 */
+        }
+
+        .isolated {
+            unicode-bidi: isolate; /* この要素のテキストを独立させる */
+            direction: ltr; /* 左から右へのテキスト方向 */
+        }
+    </style>
 </head>
 <body>
     <h1>Document page</h1>
+    <p style="direction: rtl;">
+        これは右から左へのテキストですので、折り返したりするかもですがテストです。
+       <br> <span style="unicode-bidi: isolate; direction: ltr;">This is left-to-right text.</span>
+        また、右から左へのテキストです
+    </p>
 </body>
 </html>

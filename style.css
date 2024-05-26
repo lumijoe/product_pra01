@@ -63,12 +63,12 @@ li {
   flex-direction: column;
   justify-content: flex-end;
 }
-@media (max-width: 830px) {
+@media (max-width: 885px) {
   .l-header .l-header__inner-pc .navarea .nav-menu li {
     font-size: 14px;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 785px) {
   .l-header .l-header__inner-pc .navarea .nav-menu li {
     font-size: 12px;
   }
