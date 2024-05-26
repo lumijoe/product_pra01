@@ -1,0 +1,45 @@
+$color-primary:#ff8000;
+
+.l-header {
+    width: 100%;
+}
+.l-header__inner-pc {
+    width: 100%;
+    padding: 10px 34px 15px;
+    background-color: aqua;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-area {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        nav + nav {
+            padding-top: 10px;
+        }
+    }
+    .cta-tel {
+        color: $color-primary;
+        .telNum {
+            // font-size: 28px;
+            letter-spacing: 0;
+            font: 28px / 1 "Noto Sans JP", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+            font-weight: bold;
+        }
+        .telNum::before {
+            content: "TEL";
+        }
+        .telInfo {
+            // font-size: 13px;
+            font: 13px / 1 "Noto Sans JP", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+            font-weight: bold;
+        }
+    }
+    .menu-pc {
+        display: inline-flex;
+        gap: 10px;
+        a {
+            font-weight: 500;
+        }
+    }
+}

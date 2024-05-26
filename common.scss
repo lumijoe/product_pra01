@@ -1,3 +1,4 @@
+$color-primary:#ff8000;
 * {
     margin: 0;
     overflow: hidden;
@@ -10,8 +11,16 @@ li {
     list-style-type: none;
 }
 a {
-    text-decoration-line: none;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+
 }
 .icon {
     font-size: 32px;
 }
+
+
