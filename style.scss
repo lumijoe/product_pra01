@@ -4,6 +4,13 @@
     overflow: hidden;
     box-sizing: border-box;
 }
+ul {
+    padding: 0;
+} 
+li {
+    list-style-type: none;
+}
+
 .l-header {
     width: 100%;
     background-color: beige;
@@ -23,18 +30,36 @@
             font-size:25px;
             color: coral;
 
-            @media (max-width: 284px) {
+            @media (max-width: 830px) {
                 font-size: 16px;
             }
         }
         .navarea {
             background-color: bisque;
             display: inline-flex;
-            align-items: center;   
+            align-items: center; 
             
-            .nav-menu ul {
+            ul + ul {
+                padding-top: 10px;
+            }
+
+            ul {
+                margin-left:auto;
+                margin-right: 2rem;
+                display: inline-flex;
+                gap: 20px;
+            }
+
+            .nav-menu {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                justify-content:flex-end ;
+
+                li {
+                    @media (max-width: 830px) {
+                        font-size: 14px;
+                    }
+                }
             }
             .nav-contact {
             display: inline-flex;
