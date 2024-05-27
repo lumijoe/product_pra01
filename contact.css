@@ -11,6 +11,7 @@
   align-items: center;
   box-sizing: border-box;
   padding: 1rem 2rem;
+  justify-content: space-between;
 }
 .l-header .l-header__inner .title {
   font-size: 16px;
@@ -18,6 +19,35 @@
 }
 .l-header .l-header__inner .brand-color {
   color: #e60010;
+}
+
+.navarea {
+  display: inline-flex;
+}
+.navarea .nav {
+  display: inline-flex;
+  gap: 20px;
+}
+.navarea .nav .grlineup {
+  font-size: 0px;
+}
+.navarea .nav .grlineup::before {
+  content: "GR LINEUP";
+  font-size: 16px;
+}
+.navarea .info {
+  margin-left: 20px;
+  position: relative;
+}
+.navarea .info .info_a::before {
+  content: "";
+  border-left: 1px solid #b2b2b2;
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  margin-top: -10px;
 }
 
 .l-main {
