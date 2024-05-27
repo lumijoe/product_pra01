@@ -1,0 +1,40 @@
+.l-header {
+  width: 100%;
+  margin: 0;
+}
+.l-header .l-header__inner {
+  width: 100%;
+  height: calc(60px + 2rem);
+  background-color: white;
+  color: #232323;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+}
+.l-header .l-header__inner .title {
+  font-size: 16px;
+  font-style: italic;
+}
+.l-header .l-header__inner .brand-color {
+  color: #e60010;
+}
+
+.l-main {
+  width: 100%;
+  height: auto;
+}
+
+.hero {
+  background-image: url("./img_hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - (60px + 2rem));
+  overflow: hidden;
+}
+.hero .hero_text {
+  padding-top: 20%;
+  padding-left: 2rem;
+}/*# sourceMappingURL=contact.css.map */
